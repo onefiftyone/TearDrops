@@ -1,2 +1,2 @@
 # TearDrops
-An n-tier application framework designed for rapid application development. 
+An n-tier application framework for .NET designed for rapid application development. 
