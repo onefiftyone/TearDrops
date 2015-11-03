@@ -1,0 +1,3 @@
+[submodule "Simple.Data"]
+	path = Simple.Data
+	url = https://github.com/onefiftyone/Simple.Data
