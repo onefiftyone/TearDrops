@@ -1,0 +1,1146 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "",
+  "type": "object",
+  "properties": {
+    "log4net": {
+      "id": "/log4net",
+      "type": "object",
+      "properties": {
+        "-debug": {
+          "id": "/log4net/-debug",
+          "type": "string"
+        },
+        "-update": {
+          "id": "/log4net/-update",
+          "type": "string"
+        },
+        "-threshold": {
+          "id": "/log4net/-threshold",
+          "type": "string"
+        },
+        "param": {
+          "id": "/log4net/param",
+          "type": "object",
+          "properties": {
+            "-name": {
+              "id": "/log4net/param/-name",
+              "type": "string"
+            },
+            "-value": {
+              "id": "/log4net/param/-value",
+              "type": "string"
+            },
+            "-type": {
+              "id": "/log4net/param/-type",
+              "type": "string"
+            }
+          }
+        },
+        "logger": {
+          "id": "/log4net/logger",
+          "type": "object",
+          "properties": {
+            "-name": {
+              "id": "/log4net/logger/-name",
+              "type": "string"
+            },
+            "-additivity": {
+              "id": "/log4net/logger/-additivity",
+              "type": "string"
+            },
+            "param": {
+              "id": "/log4net/logger/param",
+              "type": "object",
+              "properties": {
+                "-name": {
+                  "id": "/log4net/logger/param/-name",
+                  "type": "string"
+                },
+                "-value": {
+                  "id": "/log4net/logger/param/-value",
+                  "type": "string"
+                },
+                "-type": {
+                  "id": "/log4net/logger/param/-type",
+                  "type": "string"
+                }
+              }
+            },
+            "level": {
+              "id": "/log4net/logger/level",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/logger/level/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "appender-ref": {
+              "id": "/log4net/logger/appender-ref",
+              "type": "object",
+              "properties": {
+                "-ref": {
+                  "id": "/log4net/logger/appender-ref/-ref",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "renderer": {
+          "id": "/log4net/renderer",
+          "type": "object",
+          "properties": {
+            "-renderingClass": {
+              "id": "/log4net/renderer/-renderingClass",
+              "type": "string"
+            },
+            "-renderedClass": {
+              "id": "/log4net/renderer/-renderedClass",
+              "type": "string"
+            }
+          }
+        },
+        "root": {
+          "id": "/log4net/root",
+          "type": "object",
+          "properties": {
+            "appender-ref": {
+              "id": "/log4net/root/appender-ref",
+              "type": "object",
+              "properties": {
+                "-ref": {
+                  "id": "/log4net/root/appender-ref/-ref",
+                  "type": "string"
+                }
+              }
+            },
+            "level": {
+              "id": "/log4net/root/level",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/root/level/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "param": {
+              "id": "/log4net/root/param",
+              "type": "object",
+              "properties": {
+                "-name": {
+                  "id": "/log4net/root/param/-name",
+                  "type": "string"
+                },
+                "-value": {
+                  "id": "/log4net/root/param/-value",
+                  "type": "string"
+                },
+                "-type": {
+                  "id": "/log4net/root/param/-type",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "appender": {
+          "id": "/log4net/appender",
+          "type": "object",
+          "properties": {
+            "-name": {
+              "id": "/log4net/appender/-name",
+              "type": "string"
+            },
+            "-type": {
+              "id": "/log4net/appender/-type",
+              "type": "string"
+            },
+            "facility": {
+              "id": "/log4net/appender/facility",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/facility/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "reconnectOnError": {
+              "id": "/log4net/appender/reconnectOnError",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/reconnectOnError/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "useTransactions": {
+              "id": "/log4net/appender/useTransactions",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/useTransactions/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "target": {
+              "id": "/log4net/appender/target",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/target/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "mapping": {
+              "id": "/log4net/appender/mapping",
+              "type": "object",
+              "properties": {
+                "foreColor": {
+                  "id": "/log4net/appender/mapping/foreColor",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/foreColor/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "eventLogEntryType": {
+                  "id": "/log4net/appender/mapping/eventLogEntryType",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/eventLogEntryType/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "severity": {
+                  "id": "/log4net/appender/mapping/severity",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/severity/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "level": {
+                  "id": "/log4net/appender/mapping/level",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/level/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "attributes": {
+                  "id": "/log4net/appender/mapping/attributes",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/attributes/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "backColor": {
+                  "id": "/log4net/appender/mapping/backColor",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/mapping/backColor/-value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "immediateFlush": {
+              "id": "/log4net/appender/immediateFlush",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/immediateFlush/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "applicationName": {
+              "id": "/log4net/appender/applicationName",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/applicationName/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "logName": {
+              "id": "/log4net/appender/logName",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/logName/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "machineName": {
+              "id": "/log4net/appender/machineName",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/machineName/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "appendToFile": {
+              "id": "/log4net/appender/appendToFile",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/appendToFile/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "encoding": {
+              "id": "/log4net/appender/encoding",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/encoding/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "file": {
+              "id": "/log4net/appender/file",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/file/-value",
+                  "type": "string"
+                },
+                "-type": {
+                  "id": "/log4net/appender/file/-type",
+                  "type": "string"
+                }
+              }
+            },
+            "lockingModel": {
+              "id": "/log4net/appender/lockingModel",
+              "type": "object",
+              "properties": {
+                "-type": {
+                  "id": "/log4net/appender/lockingModel/-type",
+                  "type": "string"
+                }
+              }
+            },
+            "appender-ref": {
+              "id": "/log4net/appender/appender-ref",
+              "type": "object",
+              "properties": {
+                "-ref": {
+                  "id": "/log4net/appender/appender-ref/-ref",
+                  "type": "string"
+                }
+              }
+            },
+            "identity": {
+              "id": "/log4net/appender/identity",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/identity/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "recipient": {
+              "id": "/log4net/appender/recipient",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/recipient/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "sender": {
+              "id": "/log4net/appender/sender",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/sender/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "server": {
+              "id": "/log4net/appender/server",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/server/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "sink": {
+              "id": "/log4net/appender/sink",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/sink/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "countDirection": {
+              "id": "/log4net/appender/countDirection",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/countDirection/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "datePattern": {
+              "id": "/log4net/appender/datePattern",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/datePattern/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "maxFileSize": {
+              "id": "/log4net/appender/maxFileSize",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/maxFileSize/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "maximumFileSize": {
+              "id": "/log4net/appender/maximumFileSize",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/maximumFileSize/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "parameter": {
+              "id": "/log4net/appender/parameter",
+              "type": "object",
+              "properties": {
+                "dbType": {
+                  "id": "/log4net/appender/parameter/dbType",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/parameter/dbType/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "parameterName": {
+                  "id": "/log4net/appender/parameter/parameterName",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/parameter/parameterName/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "layout": {
+                  "id": "/log4net/appender/parameter/layout",
+                  "type": "object",
+                  "properties": {
+                    "-type": {
+                      "id": "/log4net/appender/parameter/layout/-type",
+                      "type": "string"
+                    },
+                    "-value": {
+                      "id": "/log4net/appender/parameter/layout/-value",
+                      "type": "string"
+                    },
+                    "base64EncodeProperties": {
+                      "id": "/log4net/appender/parameter/layout/base64EncodeProperties",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/base64EncodeProperties/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "base64EncodeMessage": {
+                      "id": "/log4net/appender/parameter/layout/base64EncodeMessage",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/base64EncodeMessage/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "key": {
+                      "id": "/log4net/appender/parameter/layout/key",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/key/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "header": {
+                      "id": "/log4net/appender/parameter/layout/header",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/header/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "footer": {
+                      "id": "/log4net/appender/parameter/layout/footer",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/footer/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "ignoresException": {
+                      "id": "/log4net/appender/parameter/layout/ignoresException",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/ignoresException/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "conversionPattern": {
+                      "id": "/log4net/appender/parameter/layout/conversionPattern",
+                      "type": "object",
+                      "properties": {
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/conversionPattern/-value",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "param": {
+                      "id": "/log4net/appender/parameter/layout/param",
+                      "type": "object",
+                      "properties": {
+                        "-name": {
+                          "id": "/log4net/appender/parameter/layout/param/-name",
+                          "type": "string"
+                        },
+                        "-value": {
+                          "id": "/log4net/appender/parameter/layout/param/-value",
+                          "type": "string"
+                        },
+                        "-type": {
+                          "id": "/log4net/appender/parameter/layout/param/-type",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "precision": {
+                  "id": "/log4net/appender/parameter/precision",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/parameter/precision/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "scale": {
+                  "id": "/log4net/appender/parameter/scale",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/parameter/scale/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "size": {
+                  "id": "/log4net/appender/parameter/size",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/parameter/size/-value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "rollingStyle": {
+              "id": "/log4net/appender/rollingStyle",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/rollingStyle/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "staticLogFileName": {
+              "id": "/log4net/appender/staticLogFileName",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/staticLogFileName/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "from": {
+              "id": "/log4net/appender/from",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/from/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "priority": {
+              "id": "/log4net/appender/priority",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/priority/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "subject": {
+              "id": "/log4net/appender/subject",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/subject/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "to": {
+              "id": "/log4net/appender/to",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/to/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "authentication": {
+              "id": "/log4net/appender/authentication",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/authentication/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "password": {
+              "id": "/log4net/appender/password",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/password/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "smtpHost": {
+              "id": "/log4net/appender/smtpHost",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/smtpHost/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "username": {
+              "id": "/log4net/appender/username",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/username/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "port": {
+              "id": "/log4net/appender/port",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/port/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "pickupDir": {
+              "id": "/log4net/appender/pickupDir",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/pickupDir/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "localPort": {
+              "id": "/log4net/appender/localPort",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/localPort/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "remoteAddress": {
+              "id": "/log4net/appender/remoteAddress",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/remoteAddress/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "remotePort": {
+              "id": "/log4net/appender/remotePort",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/remotePort/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "maxSizeRollBackups": {
+              "id": "/log4net/appender/maxSizeRollBackups",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/maxSizeRollBackups/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "filter": {
+              "id": "/log4net/appender/filter",
+              "type": "object",
+              "properties": {
+                "-type": {
+                  "id": "/log4net/appender/filter/-type",
+                  "type": "string"
+                },
+                "levelMax": {
+                  "id": "/log4net/appender/filter/levelMax",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/levelMax/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "levelToMatch": {
+                  "id": "/log4net/appender/filter/levelToMatch",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/levelToMatch/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "levelMin": {
+                  "id": "/log4net/appender/filter/levelMin",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/levelMin/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "acceptOnMatch": {
+                  "id": "/log4net/appender/filter/acceptOnMatch",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/acceptOnMatch/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "loggerToMatch": {
+                  "id": "/log4net/appender/filter/loggerToMatch",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/loggerToMatch/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "key": {
+                  "id": "/log4net/appender/filter/key",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/key/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "stringToMatch": {
+                  "id": "/log4net/appender/filter/stringToMatch",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/stringToMatch/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "param": {
+                  "id": "/log4net/appender/filter/param",
+                  "type": "object",
+                  "properties": {
+                    "-name": {
+                      "id": "/log4net/appender/filter/param/-name",
+                      "type": "string"
+                    },
+                    "-value": {
+                      "id": "/log4net/appender/filter/param/-value",
+                      "type": "string"
+                    },
+                    "-type": {
+                      "id": "/log4net/appender/filter/param/-type",
+                      "type": "string"
+                    }
+                  }
+                },
+                "regexToMatch": {
+                  "id": "/log4net/appender/filter/regexToMatch",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/filter/regexToMatch/-value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "layout": {
+              "id": "/log4net/appender/layout",
+              "type": "object",
+              "properties": {
+                "-type": {
+                  "id": "/log4net/appender/layout/-type",
+                  "type": "string"
+                },
+                "-value": {
+                  "id": "/log4net/appender/layout/-value",
+                  "type": "string"
+                },
+                "base64EncodeProperties": {
+                  "id": "/log4net/appender/layout/base64EncodeProperties",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/base64EncodeProperties/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "base64EncodeMessage": {
+                  "id": "/log4net/appender/layout/base64EncodeMessage",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/base64EncodeMessage/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "key": {
+                  "id": "/log4net/appender/layout/key",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/key/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "header": {
+                  "id": "/log4net/appender/layout/header",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/header/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "footer": {
+                  "id": "/log4net/appender/layout/footer",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/footer/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "ignoresException": {
+                  "id": "/log4net/appender/layout/ignoresException",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/ignoresException/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "conversionPattern": {
+                  "id": "/log4net/appender/layout/conversionPattern",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/layout/conversionPattern/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "param": {
+                  "id": "/log4net/appender/layout/param",
+                  "type": "object",
+                  "properties": {
+                    "-name": {
+                      "id": "/log4net/appender/layout/param/-name",
+                      "type": "string"
+                    },
+                    "-value": {
+                      "id": "/log4net/appender/layout/param/-value",
+                      "type": "string"
+                    },
+                    "-type": {
+                      "id": "/log4net/appender/layout/param/-type",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "param": {
+              "id": "/log4net/appender/param",
+              "type": "object",
+              "properties": {
+                "-name": {
+                  "id": "/log4net/appender/param/-name",
+                  "type": "string"
+                },
+                "-value": {
+                  "id": "/log4net/appender/param/-value",
+                  "type": "string"
+                },
+                "-type": {
+                  "id": "/log4net/appender/param/-type",
+                  "type": "string"
+                }
+              }
+            },
+            "securityContext": {
+              "id": "/log4net/appender/securityContext",
+              "type": "object",
+              "properties": {
+                "-type": {
+                  "id": "/log4net/appender/securityContext/-type",
+                  "type": "string"
+                },
+                "userName": {
+                  "id": "/log4net/appender/securityContext/userName",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/securityContext/userName/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "password": {
+                  "id": "/log4net/appender/securityContext/password",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/securityContext/password/-value",
+                      "type": "string"
+                    }
+                  }
+                },
+                "domain": {
+                  "id": "/log4net/appender/securityContext/domain",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/securityContext/domain/-value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "bufferSize": {
+              "id": "/log4net/appender/bufferSize",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/bufferSize/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "threshold": {
+              "id": "/log4net/appender/threshold",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/threshold/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "lossy": {
+              "id": "/log4net/appender/lossy",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/lossy/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "evaluator": {
+              "id": "/log4net/appender/evaluator",
+              "type": "object",
+              "properties": {
+                "-type": {
+                  "id": "/log4net/appender/evaluator/-type",
+                  "type": "string"
+                },
+                "threshold": {
+                  "id": "/log4net/appender/evaluator/threshold",
+                  "type": "object",
+                  "properties": {
+                    "-value": {
+                      "id": "/log4net/appender/evaluator/threshold/-value",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "commandText": {
+              "id": "/log4net/appender/commandText",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/commandText/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "commandType": {
+              "id": "/log4net/appender/commandType",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/commandType/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "connectionString": {
+              "id": "/log4net/appender/connectionString",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/connectionString/-value",
+                  "type": "string"
+                }
+              }
+            },
+            "connectionType": {
+              "id": "/log4net/appender/connectionType",
+              "type": "object",
+              "properties": {
+                "-value": {
+                  "id": "/log4net/appender/connectionType/-value",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      //"required": [
+      //  //"-debug",
+      //  //"-update",
+      //  //"-threshold",
+      //  //"param",
+      //  //"logger",
+      //  //"renderer",
+      //  //"root",
+      //  //"appender"
+      //]
+    }
+  },
+  "required": [
+    "log4net"
+  ]
+}

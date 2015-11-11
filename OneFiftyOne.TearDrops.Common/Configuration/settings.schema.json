@@ -1,0 +1,52 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "TearDrops Configuration Schema",
+  "name": "/",
+  "properties": {
+    "TearDrops": {
+      "type": "object",
+      "title": "TearDrops schema.",
+      "description": "An explanation about the puropose of this instance described by this schema.",
+      "name": "TearDrops",
+      "properties": {
+        "LoggingDrop": {
+          "type": "object",
+          "title": "LoggingDrop schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "LoggingDrop",
+          "properties": {
+            "Enabled": {
+              "type": "boolean",
+              "title": "Enabled schema.",
+              "description": "An explanation about the puropose of this instance described by this schema.",
+              "name": "Enabled",
+              "default": true
+            },
+            "Provider": {
+              "type": "string",
+              "title": "Provider schema.",
+              "description": "An explanation about the puropose of this instance described by this schema.",
+              "name": "Provider",
+              "default": "OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider"
+            },
+            "Log4NetSettings": {
+              "$ref": "D:\\One Fifty One\\codebase\\TearDrops\\onefiftyone.teardrops.common\\configuration\\log4net.schema.json",
+              "title": "Settings specific to Log4Net",
+              "type": "object",
+              "name": "Log4NetSettings",
+              "description": "Settings Specific to the Log4Net Logging provider",
+              "default": { "log4net" :  ""}
+            }
+          },
+          "required": [
+            "Enabled"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "TearDrops"
+  ]
+}

@@ -47,8 +47,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="TearDrops.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider\OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider.csproj">
+      <Project>{2c991576-13b9-4251-be20-f96d55e313e1}</Project>
+      <Name>OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneFiftyOne.TearDrops.Common\OneFiftyOne.TearDrops.Common.csproj">
+      <Project>{937d9297-8b17-430d-9a5b-265296f1ccdc}</Project>
+      <Name>OneFiftyOne.TearDrops.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneFiftyOne.TearDrops.Repository\OneFiftyOne.TearDrops.Repository.csproj">
+      <Project>{e8f80168-851f-419e-b05e-fae29deb4577}</Project>
+      <Name>OneFiftyOne.TearDrops.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TearDrops_1json__JSONSchema="..\onefiftyone.teardrops.common\configuration\settings.schema.json" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
