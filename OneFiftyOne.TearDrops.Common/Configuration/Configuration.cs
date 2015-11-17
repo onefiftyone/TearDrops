@@ -74,6 +74,7 @@ namespace OneFiftyOne.TearDrops.Common.Configuration
                             throw new ConfigurationException($"Unable to activate 'Provider' type specified: {pair.Value}");
 
                         var providerSettings = settings[provider.ConfigSectionName] as Settings ?? new Settings();
+                        provider.Enabled = enabled;
                         provider.Init(providerSettings);
                     }
                 }

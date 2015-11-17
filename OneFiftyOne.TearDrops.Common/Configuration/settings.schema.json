@@ -30,6 +30,14 @@
               "name": "Provider",
               "default": "OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider"
             },
+            "Mode": {
+              "type": "string",
+              "title": "Logging Mode",
+              "description": "Specifies the maximum logging level that is passed to the logging provider.",
+              "name": "Mode",
+              "default": "Warning",
+              "enum": ["Disabled", "Fatal", "Error", "Warning", "Info", "Verbose"]
+            },
             "Log4NetSettings": {
               "$ref": "D:\\One Fifty One\\codebase\\TearDrops\\onefiftyone.teardrops.common\\configuration\\log4net.schema.json",
               "title": "Settings specific to Log4Net",

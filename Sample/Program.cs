@@ -1,4 +1,5 @@
 ﻿using OneFiftyOne.TearDrops.Common.Configuration;
+using OneFiftyOne.TearDrops.Common.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +12,8 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            //Configuration.Load(Configuration.ConfigFile);
-
-
-            dynamic t = Configuration.Settings.setting1;
-
-            //Configuration.Settings.setting1 = "test2";
-            //Configuration.Save();
+            Logger.Log(LogMode.Error, "Test error");
+            Logger.Log(LogMode.Verbose, "Shouldnt show up");
         }
     }
 }               

@@ -3,6 +3,7 @@
     "LoggingDrop": {
       "Enabled": true,
       "Provider": "OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider, OneFiftyOne.TearDrops.Common.Logging.Log4NetProvider",
+      "Mode": "Info",
       "Log4NetSettings": {
         "log4net": {
           "appender": {
@@ -20,6 +21,10 @@
                 "-value": "%date [%thread] %level %logger - %message%newline"
               }
             }
+          },
+          "root": {
+            "level": { "-value": "DEBUG" },
+            "appender-ref": {"-ref": "RollingFileAppender"}
           }
         }
       }
