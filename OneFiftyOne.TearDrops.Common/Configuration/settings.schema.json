@@ -10,6 +10,21 @@
       "description": "An explanation about the puropose of this instance described by this schema.",
       "name": "TearDrops",
       "properties": {
+        "RepositoryDrop": {
+          "type": "object",
+          "title": "RepositoryDrop schema.",
+          "description": "An explanation about the puropose of this instance described by this schema.",
+          "name": "RepositoryDrop",
+          "properties": {
+             "BatchOperationSize": {
+              "type": "integer",
+              "title": "Batch Operation Size",
+              "description": "The number of operations to perform at a time for batch operations. Lower uses less memory, higher typically performs better",
+              "name": "BatchOperationSize",
+              "default": 50000
+            }
+          }
+        },
         "LoggingDrop": {
           "type": "object",
           "title": "LoggingDrop schema.",
@@ -36,7 +51,7 @@
               "description": "Specifies the maximum logging level that is passed to the logging provider.",
               "name": "Mode",
               "default": "Warning",
-              "enum": ["Disabled", "Fatal", "Error", "Warning", "Info", "Verbose"]
+              "enum": [ "Disabled", "Fatal", "Error", "Warning", "Info", "Verbose" ]
             },
             "Log4NetSettings": {
               "$ref": "D:\\One Fifty One\\codebase\\TearDrops\\onefiftyone.teardrops.common\\configuration\\log4net.schema.json",
@@ -44,7 +59,7 @@
               "type": "object",
               "name": "Log4NetSettings",
               "description": "Settings Specific to the Log4Net Logging provider",
-              "default": { "log4net" :  ""}
+              "default": { "log4net": "" }
             }
           },
           "required": [

@@ -13,7 +13,7 @@ namespace OneFiftyOne.TearDrops.Common.Configuration
     public class Settings : DynamicObject
     {
         private ConcurrentDictionary<string, object> settings = new ConcurrentDictionary<string, object>(StringComparer.CurrentCultureIgnoreCase);
-        private string name = "{root}";
+        //private string name = "{root}";
 
         [JsonIgnore]
         public string Name { get; private set; }

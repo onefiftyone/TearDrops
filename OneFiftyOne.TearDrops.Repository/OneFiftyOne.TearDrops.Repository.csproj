@@ -30,14 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Simple.Data">
       <HintPath>..\PreReqs\Simple.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Simple.Data.Ado">
-      <HintPath>..\PreReqs\Simple.Data.Ado.dll</HintPath>
-    </Reference>
-    <Reference Include="Simple.Data.SqlServer">
-      <HintPath>..\PreReqs\Simple.Data.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,7 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="CustomAttributes.cs" />
+    <Compile Include="DataFunction.cs" />
+    <Compile Include="DynamicRecord.cs" />
+    <Compile Include="ExpressionEngine.cs" />
+    <Compile Include="GenericRepository.cs" />
+    <Compile Include="PagedResults.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryException.cs" />
+    <Compile Include="RepositoryExtensions.cs" />
+    <Compile Include="RepositoryTransaction.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneFiftyOne.TearDrops.Common\OneFiftyOne.TearDrops.Common.csproj">
+      <Project>{937d9297-8b17-430d-9a5b-265296f1ccdc}</Project>
+      <Name>OneFiftyOne.TearDrops.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

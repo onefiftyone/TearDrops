@@ -1,5 +1,6 @@
 ﻿using OneFiftyOne.TearDrops.Common.Configuration;
 using OneFiftyOne.TearDrops.Common.Logging;
+using OneFiftyOne.TearDrops.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace Sample
     {
         static void Main(string[] args)
         {
-            Logger.Log(LogMode.Error, "Test error");
-            Logger.Log(LogMode.Verbose, "Shouldnt show up");
+            BaseRepository.ChangeConnection(null, "Test", "Data Source=ATLAS;Initial Catalog=Empty;Integrated Security=yes;", "System.Data.SqlClient");
+            var test = BaseRepository.ActiveConnection;
         }
     }
 }               
